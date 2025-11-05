@@ -36,3 +36,5 @@ Route::get('/student/{id}', function ($id) {
 Route::get('Servece/{name}', function($name){
     return view("Serveces", compact('name'));
 });
+// Cache
+Route::view('/home/{name}' , 'name');

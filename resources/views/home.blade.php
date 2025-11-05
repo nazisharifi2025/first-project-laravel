@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    @include(Subview.home)
-</body>
-</html>
+<div>
+    <h1>Hi dear {{ Request()->name }}</h1>
+     
+</div>
