@@ -6,10 +6,6 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="h-screen flex items-center justify-center w-full font-bold text-3xl">
-        <h1>About Page</h1>
-        <h1>{{$name}}</h1>
-        <h1>{{$lastName}}</h1>
-    </div>
+    @include(Subview.home)
 </body>
 </html>
