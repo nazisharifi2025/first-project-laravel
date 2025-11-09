@@ -1,8 +1,3 @@
-<!-- <div>
-    @include('Subview.Navbar')
-    <h1>Hi dear {{ request()->name}}</h1>
-     @include('Subview.input',['name'=>request()->name])
-</div> -->
 @extends("layout.app")
     @section("styles")
     <style>
@@ -59,7 +54,7 @@
     @endsection
     @section("mainsection")
     <div class="SmaillDiv">
-     <h1>Who we Are?</h1>
+     <h1>Services Page</h1>
      <p>Lorem ipsum dolor Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, accusamus rem laudantium voluptates maxime, ea quia voluptas, dolor voluptate nesciunt nam saepe provident laboriosam reiciendis. Aut ullam nulla neque sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur molestiae cupiditate expedita neque fugiat excepturi odio ducimus enim in! Aliquam at a in, provident deserunt quos nisi minima id ex? sit amet consectetur adipisicing elit. Esse corrupti voluptas eaque voluptate, voluptates iure dicta qui doloribus illum earum deleniti ipsum laboriosam odit. Sed veritatis quae tempore ipsum aut?</p>
     </div>
      <img src="/image/download (3).jpg" class="images" alt="">

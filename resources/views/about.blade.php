@@ -12,4 +12,9 @@
         <h1>{{$lastName}}</h1>
     </div>
 </body>
-</html>
+</html> 
+ <div>
+    @include('Subview.Navbar')
+    <h1>Hi dear {{ request()->name}}</h1>
+     @include('Subview.input',['name'=>request()->name])
+</div>

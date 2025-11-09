@@ -36,5 +36,16 @@ Route::get('/student/{id}', function ($id) {
 Route::get('Servece/{name}', function($name){
     return view("Serveces", compact('name'));
 });
-// Cache
-Route::view('/home/{name}' , 'name');
+// Basic Routing to view
+Route::get('/home' , function(){
+    return view('home');
+});
+route::get("aboutus", function(){
+    return view("aboutus");
+});
+Route::get("contuct", function(){
+    return view("Contuct");
+});
+Route::get("servec", function(){
+    return view("Servec");
+});
