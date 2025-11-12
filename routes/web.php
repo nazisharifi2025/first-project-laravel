@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\blog;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -48,4 +48,21 @@ Route::get("contuct", function(){
 });
 Route::get("servec", function(){
     return view("Servec");
+});
+Route::get("blog", [blog::class,'index']);
+Route::get("show", [blog::class,'show']);
+Route::get("privet", [blog::class,'privetFunction']);
+Route::get("protect", [blog::class,'Prot']);
+
+Route::get("HomeSection" , function(){
+    return view("PageHome");
+});
+Route::get("fetcher" , function(){
+    return view("features");
+});
+Route::get("price" , function(){
+    return view("Price");
+});
+Route::get("tamas" , function(){
+    return view("Tamas");
 });
